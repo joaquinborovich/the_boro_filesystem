@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=" {{url_for('static', filename='styles/index.css')}} ">
+    <title>The Boro Filesystem</title>
+</head>
+<body>
+    <div>
+        <div id="title">
+            <h5 id="title-sublabel"> a public, free, unlimited, file sharing service</h5>
+            <h1 id="title-label">-> Files</h1>
+        </div>
+
+        {% for file in files %}
+            <li><a href="../file/{{ file }}">{{ file }}</a></li>
+        {% endfor %}
+
+        <div>
+            <ul>
+                <li><a href="/">home</a></li>
+                <li><a href="/files">files</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="{{url_for('static', filename='js/index.js')}}"></script>
+</body>
+</html>

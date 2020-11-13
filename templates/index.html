@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=" {{url_for('static', filename='styles/index.css')}} ">
+    <title>The Boro Filesystem</title>
+</head>
+<body>
+    <div>
+        <div id="title">
+            <h5 id="title-sublabel"> a public, free, unlimited, file sharing service</h5>
+            <h1 id="title-label">The Boro Filesystem</h1>
+        </div>
+        <div>
+            <form id="file-upload">
+                <div>
+                    <input type="file" name="file-up" id="file-input" hidden>
+                    <label for="file-input" id="file-input-label"> > Select file</label>
+                </div>
+                
+                <button id="file-upload-submit">Upload ↑</button>
+            </form>
+        </div>
+   
+        <div>
+            <ul>
+                <li><a href="/home">home</a></li>
+                <li><a href="/files">files</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="{{url_for('static', filename='js/index.js')}}"></script>
+</body>
+</html>
