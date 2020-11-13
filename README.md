@@ -2,11 +2,12 @@
 a public, free, unlimited, file sharing service
 
 
-sites: 
+# sites: 
   * /
   * files
   
-flask entry point: /boro_filesystem.py
+# flask entry point: 
+  * /boro_filesystem.py
 
 
 # look & feel:
